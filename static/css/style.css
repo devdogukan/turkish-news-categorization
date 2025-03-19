@@ -1,0 +1,64 @@
+.result-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.confidence-bar {
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-title {
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Sınıf renkleri */
+.category-siyaset .progress-bar { background-color: #dc3545; }
+.category-dunya .progress-bar { background-color: #6c757d; }
+.category-ekonomi .progress-bar { background-color: #28a745; }
+.category-kultur .progress-bar { background-color: #fd7e14; }
+.category-saglik .progress-bar { background-color: #20c997; }
+.category-spor .progress-bar { background-color: #0dcaf0; }
+.category-teknoloji .progress-bar { background-color: #6610f2; }
+
+/* Kategori başlıkları */
+.category-siyaset {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-left: 4px solid #dc3545;
+}
+.category-dunya {
+    background-color: rgba(108, 117, 125, 0.1);
+    border-left: 4px solid #6c757d;
+}
+.category-ekonomi {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-left: 4px solid #28a745;
+}
+.category-kultur {
+    background-color: rgba(253, 126, 20, 0.1);
+    border-left: 4px solid #fd7e14;
+}
+.category-saglik {
+    background-color: rgba(32, 201, 151, 0.1);
+    border-left: 4px solid #20c997;
+}
+.category-spor {
+    background-color: rgba(13, 202, 240, 0.1);
+    border-left: 4px solid #0dcaf0;
+}
+.category-teknoloji {
+    background-color: rgba(102, 16, 242, 0.1);
+    border-left: 4px solid #6610f2;
+}
