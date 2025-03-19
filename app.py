@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import numpy as np
 import pickle
-import tensorflow as tf
-from tensorflow.keras.models import model_from_json
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import model_from_json # type: ignore
+from tensorflow.keras.preprocessing.sequence import pad_sequences # type: ignore
 import re
 import string
 from TurkishStemmer import TurkishStemmer
@@ -16,10 +15,9 @@ MODEL_DIR = 'models'
 
 # Model ve diğer bileşenleri yükleme
 def load_model_components():
-    # Model mimarisini yükleme
-    json_file = open(os.path.join(MODEL_DIR, 'turkish_news_catagory.json'), 'r')
-    loaded_model_json = json_file.read()
-    json_file.close()
+    with open(os.path.join(MODEL_DIR, 'turkish_news_catagory.json'), 'r') as json_file:
+        loaded_model_json = json_file.read()
+        
     model = model_from_json(loaded_model_json)
     
     # Model ağırlıklarını yükleme
