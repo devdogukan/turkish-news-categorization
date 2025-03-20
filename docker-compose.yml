@@ -1,0 +1,10 @@
+version: '3.8'
+  
+services:
+  app:
+    image: turkish-news-categorization
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models  # Models klasörünü volume olarak bağla

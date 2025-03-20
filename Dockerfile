@@ -34,7 +34,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY app.py .
 COPY templates templates
 COPY static static
-COPY models models
 
 # Portu aç
 EXPOSE 5000
