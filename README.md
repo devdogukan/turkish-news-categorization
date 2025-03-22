@@ -102,13 +102,17 @@ turkish-news-classification/
 │   └── label_encoder.pickle # Category labels
 ├── static/               # Static files (CSS, JS)
 │   └── css/
-│       └── style.css
+│   |   └── style.css
+|   └── js/
+|       └── script.js
 ├── templates/            # HTML templates
 │   ├── index.html        # Main page
 │   └── demo.html         # Sample texts page
 ├── Dockerfile            # Docker configuration
 ├── requirements.txt      # Python dependencies
-└── README.txt            # This file
+|── LICENSE               # License information
+|── docker-compose.yml    # Docker Compose configuration
+└── README.md             # Project documentation
 ```
 
 Model Information

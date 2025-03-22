@@ -7,4 +7,4 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./models:/app/models  # Models klasörünü volume olarak bağla
+      - ./models:/app/models  # Mount the models directory to the container
